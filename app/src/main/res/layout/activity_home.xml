@@ -15,6 +15,8 @@
         android:layout_marginTop="32dp"
         android:text="@string/tv_user"
         android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,6 +36,8 @@
         android:layout_marginTop="32dp"
         android:text="@string/tv_filter"
         android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_uask" />
 
@@ -50,7 +54,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:max="100"
-        android:progress="50"
+        android:progress="10"
+        android:progressTint="@color/secondary3"
+        android:thumbTint="@color/secondary3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_price_range" />
@@ -61,6 +67,8 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:text="Price Range"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,6 +99,8 @@
         android:text="@string/btn_generate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBarPriceRange" />
+        app:layout_constraintTop_toBottomOf="@+id/seekBarPriceRange"
+        android:backgroundTint="@color/primary3"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
