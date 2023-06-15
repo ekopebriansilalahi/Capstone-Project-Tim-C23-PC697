@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.physattr.PhysicalAttribute">
+
+    <TextView
+        android:id="@+id/tv_physical_title"
+        android:textSize="32sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/physical_attribute_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/tv_pa_desc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_physical_title" />
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_age"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="@string/age"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_age"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weight"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/til_age"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_weight"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="@string/weight"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_weight"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/height"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/til_weight"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_height">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sex"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/til_height"/>
+
+    <RadioGroup
+        android:id="@+id/rg_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_sex"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/woman"/>
+        <RadioButton
+            android:id="@+id/rb_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/man"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_purpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/purpose"
+        app:layout_constraintTop_toBottomOf="@id/rg_sex"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Spinner
+        android:id="@+id/spinner_purpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_purpose"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/tv_activity_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_level"
+        app:layout_constraintTop_toBottomOf="@id/spinner_purpose"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <RadioGroup
+        android:id="@+id/rg_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_activity_level"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_sedentary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sedentary"/>
+        <RadioButton
+            android:id="@+id/rb_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/light"/>
+        <RadioButton
+            android:id="@+id/rb_moderate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/moderate"/>
+        <RadioButton
+            android:id="@+id/rb_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/high"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_pa_save"
+        app:layout_constraintTop_toBottomOf="@id/rg_level"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
