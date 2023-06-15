@@ -1,2 +1,7 @@
 runtime: nodejs16
-service: backend
+service: your-app-service-name
+
+automatic_scaling:
+  min_instances: 1
+  max_instances: 5
+  target_cpu_utilization: 0.65
