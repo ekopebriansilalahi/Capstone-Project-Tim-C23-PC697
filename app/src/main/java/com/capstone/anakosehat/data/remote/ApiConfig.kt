@@ -20,5 +20,5 @@ object ApiConfig {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-    val hereAppService = retrofit.create<AnaKoSehatService>()
+    val anaKoSehatService = retrofit.create<AnaKoSehatService>()
 }
