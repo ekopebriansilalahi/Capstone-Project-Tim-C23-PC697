@@ -15,3 +15,15 @@ data class PostSignInRequest(
 data class Response(
     val message: String,
 )
+
+data class PhysicalAttribute(
+    var isLogin: Boolean ?= null,
+    var age: Int ?= null,
+    var weight: Float ?= null,
+    var height: Float ?= null,
+    var sex: Boolean ?= null,
+)
+
+data class Allergies(
+    var allergies: MutableList<String> ?= null
+)

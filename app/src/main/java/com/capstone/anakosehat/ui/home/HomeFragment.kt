@@ -1,5 +1,6 @@
 package com.capstone.anakosehat.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +9,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.capstone.anakosehat.databinding.FragmentHomeBinding
+import com.capstone.anakosehat.ui.physattr.PhysicalAttribute
 
 class HomeFragment : Fragment() {
 
@@ -35,6 +37,10 @@ class HomeFragment : Fragment() {
         return root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        startActivity(Intent(requireActivity(), PhysicalAttribute::class.java))
+    }
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
