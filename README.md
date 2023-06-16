@@ -17,10 +17,9 @@ Visily link for the prototype :
 	https://app.visily.ai/projects/8d25a500-9b71-426c-80d1-9c3e6c351f48/boards/488954/presenter?play-mode=Prototype
   
  # Screenshoots
-![Sign Up](https://github.com/ekopebriansilalahi/Capstone-Project-Tim-C23-PC697/assets/86305950/567018e7-ebe7-4203-8d7e-fc5a772281be)
-![Sign In](https://github.com/ekopebriansilalahi/Capstone-Project-Tim-C23-PC697/assets/86305950/fc01e1a4-7d61-48d2-8bdb-078e971cf027)
-![Physical Attribute](https://github.com/ekopebriansilalahi/Capstone-Project-Tim-C23-PC697/assets/86305950/3a1603a1-58ba-47f7-912e-524e11691ac9)
-
+<img src="https://github.com/ekopebriansilalahi/Capstone-Project-Tim-C23-PC697/assets/86305950/567018e7-ebe7-4203-8d7e-fc5a772281be" width="300">
+<img src="https://github.com/ekopebriansilalahi/Capstone-Project-Tim-C23-PC697/assets/86305950/fc01e1a4-7d61-48d2-8bdb-078e971cf027" width="300">
+<img src="https://github.com/ekopebriansilalahi/Capstone-Project-Tim-C23-PC697/assets/86305950/3a1603a1-58ba-47f7-912e-524e11691ac9" width="300">
 
 ## Tools
 AnaKoSehat uses the following technology stack:
