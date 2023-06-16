@@ -6,6 +6,7 @@ const allergyRoutes = require("./routes/allergyRoutes");
 const foodPreferenceRoutes = require("./routes/foodPreferenceRoutes");
 
 const app = express();
+const port = 8080;
 
 app.use(bodyParser.json());
 
@@ -16,6 +17,6 @@ app.use("/allergy", allergyRoutes);
 app.use("/food-preference", foodPreferenceRoutes);
 
 // Start the server
-app.listen(3003, () => {
-  console.log("Server is running on port 3003");
-});
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
+  });
