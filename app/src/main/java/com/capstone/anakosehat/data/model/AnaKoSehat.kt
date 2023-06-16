@@ -7,6 +7,11 @@ data class PostSignUpRequest(
     val password: String
 )
 
+data class PostSignInRequest(
+    val email: String,
+    val password: String
+)
+
 data class Response(
     val message: String,
 )

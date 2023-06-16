@@ -3,6 +3,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.capstone.anakosehat.data.repository.AnaKoSehatRepository
 import com.capstone.anakosehat.di.Injection
+import com.capstone.anakosehat.ui.login.LoginViewModel
 import com.capstone.anakosehat.ui.register.RegisterViewModel
 
 @Suppress("UNCHECKED_CAST")
@@ -11,6 +12,9 @@ class ViewModelFactory(private val repo: AnaKoSehatRepository): ViewModelProvide
         return when {
             modelClass.isAssignableFrom(RegisterViewModel::class.java) -> {
                 RegisterViewModel(repo) as T
+            }
+            modelClass.isAssignableFrom(LoginViewModel::class.java) -> {
+                LoginViewModel(repo) as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }
